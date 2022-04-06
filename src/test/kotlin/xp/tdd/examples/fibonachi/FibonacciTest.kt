@@ -8,9 +8,9 @@ class FibonacciTest {
     @Test
     fun `Fibonacci returns correct value`() {
         val sut = Fibonacci()
-        val inputs = listOf(0, 1)
-        inputs.forEach {
-            assertThat(sut.fib(it)).isEqualTo(it)
+        val inputsAndExpectations = listOf(Pair(0, 0), Pair(1, 1))
+        inputsAndExpectations.forEach {
+            assertThat(sut.fib(it.first)).isEqualTo(it.second)
         }
     }
 }
