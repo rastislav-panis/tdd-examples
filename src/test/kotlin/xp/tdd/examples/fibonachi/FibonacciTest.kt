@@ -9,5 +9,6 @@ class FibonacciTest {
     fun `Fibonacci returns correct value`() {
         val sut = Fibonacci()
         assertThat(sut.fib(0)).isEqualTo(0)
+        assertThat(sut.fib(1)).isEqualTo(1)
     }
 }
